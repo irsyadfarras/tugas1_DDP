@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Irsyad Farras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; color: #333; }
+        .navbar { background-color: #f0f0f0; border-bottom: 1px solid #eee; }
+        .navbar-brand { font-weight: 600; color: #2d3436 !important; }
+        .nav-link { color: #636e72 !important; font-size: 0.9rem; margin-left: 15px; }
+        .nav-link:hover { color: #0984e3 !important; }
+        .btn-primary-custom { background-color: #0984e3; border: none; padding: 10px 25px; border-radius: 8px; }
+        footer { background-color: #1e272e; color: #d2dae2; padding: 60px 0 30px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">IRSYAD<span class="text-primary">.DEV</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'gallery' %}">Gallery</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-primary btn-primary-custom text-white" href="https://api.whatsapp.com/send/?phone=6285880505439&text&type=phone_number&app_absent=0" target="_blank">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="container text-center">
+            <h5 class="fw-bold mb-4">Irsyad Farras Al Farisyi</h5>
+            <p class="small">Teknik Informatika | Universitas Kamu</p>
+            <div class="mb-4">
+                <a href="https://www.instagram.com/irsyadfarras/"  target="_blank" class="text-white mx-2 text-decoration-none">Instagram</a>
+                <a href="https://www.linkedin.com/in/irsyad-farras-al-farisyi-5ba1913a5/" target="_blank" class="text-white mx-2 text-decoration-none">LinkedIn</a>
+                <a href="https://github.com/irsyadfarras" target="_blank" class="text-white mx-2 text-decoration-none">Github</a>
+            </div>
+            <hr class="border-secondary">
+            <p class="small opacity-50">&copy; 2026 Irsyad Farras. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{% extends 'webku/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Tentang Saya</h2>
+        <p class="text-muted">Perjalanan pendidikan dan pengalaman organisasi saya.</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card border-0 shadow-sm rounded-4 mb-5">
+                <div class="card-body p-4">
+                    <h5 class="fw-bold mb-4">Riwayat Pendidikan</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="border-0">Jenjang</th>
+                                    <th class="border-0">Instansi</th>
+                                    <th class="border-0 text-end">Tahun</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold text-primary">TK</td>
+                                    <td>TK IT Bina Cendekia</td>
+                                    <td class="text-end">2011-2012</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-primary">SD</td>
+                                    <td>SDN Merak 1</td>
+                                    <td class="text-end">2012-2019</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-primary">SMP</td>
+                                    <td>MTS Arriyadl</td>
+                                    <td class="text-end">2019-2022</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-primary">SMA</td>
+                                    <td>MA Fath Darut Tafsir</td>
+                                    <td class="text-end">2022-2025 </td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-primary">Kuliah</td>
+                                    <td>STT Terpadu Nurul Fikri</td>
+                                    <td class="text-end">2025 - Sekarang</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4">
+                    <h5 class="fw-bold mb-4 text-success">Pengalaman Organisasi</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td><strong>LDK Senada</strong></td>
+                                    <td>Magang</td>
+                                    <td class="text-end badge bg-success-subtle text-success rounded-pill mt-2">2025</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BES Badan Eksekusi Santri</strong></td>
+                                    <td>Ketua ta'lim</td>
+                                    <td class="text-end badge bg-success-subtle text-success rounded-pill mt-2">2024-2025</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

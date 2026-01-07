@@ -1,0 +1,24 @@
+{% extends 'webku/base.html' %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h6 class="text-primary fw-bold mb-3">STT NF Student</h6>
+                <h1 class="display-4 fw-bold mb-4"> <br><span class="text-primary">Smarter Coder.</span></h1>
+                <p class="lead text-muted mb-4">Halo! Saya Irsyad Farras Al Farisyi, mahasiswa di STT Terpadu Nurul Fikri dengan Program Studi Teknik Informatika yang berfokus pada pengembangan solusi digital yang inovatif dan efisien.
+                    Orangnya Tamvan, bisa ngaji, keren dah pokoknya
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="{% url 'about' %}" class="btn btn-dark px-4 py-2 rounded-3">Riwayat Saya</a>
+                    <a href="{% url 'gallery' %}" class="btn btn-outline-dark px-4 py-2 rounded-3">Lihat Galeri</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                <img src="../../static/images/irsyad.jpg" class="img-fluid rounded-4 shadow-lg" alt="Profile">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
